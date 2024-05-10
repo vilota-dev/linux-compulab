@@ -25,6 +25,12 @@
 		};
 	};
 
+	pps {
+		compatible = "pps-gpio";
+		gpios = <&gpio4 26 GPIO_ACTIVE_HIGH>;
+		status = "okay";
+	};
+
 	memory@40000000 {
 		device_type = "memory";
 		reg = <0x0 0x40000000 0 0xc0000000>,
